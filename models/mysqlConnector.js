@@ -13,10 +13,11 @@
 var mysql = require('mysql');
 // Initialize pool
 var pool      =    mysql.createPool({
-    host     : 'sql2.freemysqlhosting.net',
-    user     : 'sql2226375',
-   	password : 'dT1!lD3%',
-    database : 'sql2226375',
+    connectionLimit : 10,
+    host     : 'us-cdbr-iron-east-05.cleardb.net',
+    user     : 'bb6b06a917f7fa',
+    password : '02f1d5a3',
+    database : 'heroku_70544ebd1d8adf0',
     debug    :  false
 });
 module.exports = pool;
